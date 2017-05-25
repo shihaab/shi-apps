@@ -1,0 +1,288 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.statusbar-overlay {
+    background: rgba(73,228,105,0.70);
+}
+.img-corner {
+	position: absolute;
+	float:right;
+	right:0px;
+	bottom:0px;
+}
+.page-about {
+	/*background-image: url(../img/about.png); */
+	background-color:#FFF1DF;
+	color: #222;
+}
+.page-home {
+	background-color:#FFF1DF;
+
+}
+.toolbar-inner {
+	background-color: aliceblue;
+}
+
+.navbar-inner {
+	background-color: aliceblue;
+}
+
+.rainbow-btn {
+	background-color: #00A2A5;
+	color: whitesmoke;
+	padding: 10px;
+	border: 0px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.img-op {
+	
+	position: static;
+	float: right;
+	right: 0px;
+	bottom: 0px;
+}
+
+.op-header {
+	border-bottom: medium solid #00A2A5;
+}
+.table-loadout {
+	
+}
+.list-loadout {
+	list-style-type: square;
+}
+
+.lyrics p {
+	border-bottom: dotted thin #1E4A57;
+}
+
+
+h3 {
+	border-bottom: dotted medium #00A2A5;
+}
+
+
+	/* 
+
+
+
+Define this in your CSS 
+
+.ease-in-outAnimation = Replace it by the name you want to give your animation
+
+.easeinoutAnimObj = Assign this class to the elements to which you want to apply the animation
+
+*/
+
+
+
+.easeinoutAnimObj {
+
+    position: relative;
+
+    /* Chrome, Safari*/
+
+    -webkit-animation-name: ease-in-outAnimation;
+
+    -webkit-animation-duration: 5s;
+
+    -webkit-animation-timing-function: ease-in-out;
+
+    -webkit-animation-delay: 2s;
+
+    -webkit-animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+
+    -webkit-animation-play-state: running;
+
+    /* Opera */
+
+    -o-animation-name: ease-in-outAnimation;
+
+    -o-animation-duration: 5s;
+
+    -o-animation-timing-function: ease-in-out;
+
+    -o-animation-delay: 2s;
+
+    -o-animation-iteration-count: infinite;
+
+    -o-animation-direction: alternate;
+
+    -o-animation-play-state: running;
+
+    /* Mozilla */
+
+    -moz-animation-name: ease-in-outAnimation;
+
+    -moz-animation-duration: 5s;
+
+    -moz-animation-timing-function: ease-in-out;
+
+    -moz-animation-delay: 2s;
+
+    -moz-animation-iteration-count: infinite;
+
+    -moz-animation-direction: alternate;
+
+    -moz-animation-play-state: running;
+
+    /* Standard syntax */
+
+    animation-name: ease-in-outAnimation;
+
+    animation-duration: 5s;
+
+    animation-timing-function: ease-in-out;
+
+    animation-delay: 2s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    animation-play-state: running;
+
+}
+
+/* 
+
+
+
+Define the keyframe and changes
+
+
+
+*/
+
+
+
+/* Chrome, Safari */
+
+
+
+@-webkit-keyframes ease-in-outAnimation {
+
+    0% {
+
+        left: 0px;
+
+        top: 0px;
+
+    }
+
+    100% {
+
+        left: 200px;
+
+        top: 0px;
+
+    }
+
+}
+
+/* Firefox */
+
+
+
+@-moz-keyframes ease-in-outAnimation {
+
+    0% {
+
+        left: 0px;
+
+        top: 0px;
+
+    }
+
+    100% {
+
+        left: 200px;
+
+        top: 0px;
+
+    }
+
+}
+
+/* Opera */
+
+
+
+@-o-keyframes ease-in-outAnimation {
+
+    0% {
+
+        left: 0px;
+
+        top: 0px;
+
+    }
+
+    100% {
+
+        left: 200px;
+
+        top: 0px;
+
+    }
+
+}
+
+/* Standard syntax */
+
+
+
+@keyframes ease-in-outAnimation {
+
+    0% {
+
+        left: 0px;
+
+        top: 0px;
+
+    }
+
+    100% {
+
+        left: 200px;
+
+        top: 0px;
+
+    }
+
+}
+
+
+/* Apply this selector to the element on which this effects needs to be applied*/
+
+
+.blurryText{
+	transition: 0.2s;
+}
+.blurryText:hover{
+	
+   color: transparent;
+
+   text-shadow: 0 0 5px rgba(131,246,228,0.8);
+
+}
